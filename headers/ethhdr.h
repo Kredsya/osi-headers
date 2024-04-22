@@ -16,7 +16,8 @@ struct EthHdr {
     uint16_t type() { return ntohs(type_); }
 
     enum : uint16_t {
-        ipv4 = 0x0800
+        ipv4 = 0x0800,
+        arp = 0x0806
     };
 };
 #pragma pack(pop)
